@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://byoqm6ine8p6e"]
+
+[ext_resource type="LabelSettings" uid="uid://bw3or82e8w43k" path="res://label.tres" id="1_m6is1"]
+
+[node name="Label" type="Label"]
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.997
+offset_left = 3.0
+offset_top = 3.0
+offset_right = -3.0
+offset_bottom = -0.0560303
+text = "Hello World"
+label_settings = ExtResource("1_m6is1")
+horizontal_alignment = 1
+vertical_alignment = 1
