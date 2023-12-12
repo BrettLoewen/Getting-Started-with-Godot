@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://byoqm6ine8p6e"]
 
-[ext_resource type="LabelSettings" uid="uid://bw3or82e8w43k" path="res://label.tres" id="1_m6is1"]
+[ext_resource type="LabelSettings" uid="uid://bw3or82e8w43k" path="res://Misc/label.tres" id="1_m6is1"]
 
 [node name="Label" type="Label"]
 anchors_preset = -1

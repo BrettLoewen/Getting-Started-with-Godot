@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Getting Started"
-run/main_scene="res://Ball Example/Main.tscn"
+run/main_scene="res://Step by Step Guide/Using Signals.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 

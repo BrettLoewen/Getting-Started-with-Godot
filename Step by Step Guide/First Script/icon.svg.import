@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qrf2c8d3pi7f"
-path="res://.godot/imported/icon.svg-2a5ccb1df45287607aebe0401ed500fa.ctex"
+uid="uid://feujrmiruiuv"
+path="res://.godot/imported/icon.svg-180205b26334966b72305a13a62b189d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ball Example/icon.svg"
-dest_files=["res://.godot/imported/icon.svg-2a5ccb1df45287607aebe0401ed500fa.ctex"]
+source_file="res://Step by Step Guide/First Script/icon.svg"
+dest_files=["res://.godot/imported/icon.svg-180205b26334966b72305a13a62b189d.ctex"]
 
 [params]
 
