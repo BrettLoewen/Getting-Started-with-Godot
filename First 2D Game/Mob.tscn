@@ -1,0 +1,68 @@
+[gd_scene load_steps=10 format=3 uid="uid://b6701gekx1j4g"]
+
+[ext_resource type="Script" path="res://First 2D Game/Mob.gd" id="1_bdrp8"]
+[ext_resource type="Texture2D" uid="uid://ck553yk4tunph" path="res://First 2D Game/art/enemyFlyingAlt_1.png" id="1_hu3n7"]
+[ext_resource type="Texture2D" uid="uid://pqo54dx0k8v2" path="res://First 2D Game/art/enemyFlyingAlt_2.png" id="2_8pm3w"]
+[ext_resource type="Texture2D" uid="uid://bmyxnbqvbqkkg" path="res://First 2D Game/art/enemySwimming_1.png" id="3_iom6v"]
+[ext_resource type="Texture2D" uid="uid://cgcb8rsp1cbgg" path="res://First 2D Game/art/enemySwimming_2.png" id="4_ko31a"]
+[ext_resource type="Texture2D" uid="uid://ce5077d7ng3f4" path="res://First 2D Game/art/enemyWalking_1.png" id="5_sm1es"]
+[ext_resource type="Texture2D" uid="uid://dt008yec0jkk4" path="res://First 2D Game/art/enemyWalking_2.png" id="6_g3g52"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dkvst"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_hu3n7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_8pm3w")
+}],
+"loop": true,
+"name": &"fly",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_iom6v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ko31a")
+}],
+"loop": true,
+"name": &"swim",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_sm1es")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_g3g52")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 3.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kv0y0"]
+radius = 34.0
+height = 98.0
+
+[node name="Mob" type="RigidBody2D"]
+collision_mask = 0
+gravity_scale = 0.0
+script = ExtResource("1_bdrp8")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.75, 0.75)
+sprite_frames = SubResource("SpriteFrames_dkvst")
+animation = &"walk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_kv0y0")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
