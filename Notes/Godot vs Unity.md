@@ -31,7 +31,7 @@ When you create a project, it asks you to pick a renderer from 3 options. It see
 
 In Unity, you can hold the alt key while left clicking the expand/collapse arrow for things in the project and hierarchy windows. In Godot, this is done by holding the shift key instead of the alt key.
 
-The file system (project) window tab has a favourites "folder" at the top. You can right click on any asset and select Add to Favourites to make it appear under the favourites folder as well as in its file location. This is a cool idea for having quick access to files that you work with often. You can mark folders as favourites, but they can;t be opened and just exist so you can click on them to bring you to the actual folder. It seems that you can't create folders within favourites, which limits how helpful it can be in my opinion.
+The file system (project) window tab has a favourites "folder" at the top. You can right click on any asset and select Add to Favourites to make it appear under the favourites folder as well as in its file location. This is a cool idea for having quick access to files that you work with often. You can mark folders as favourites, but they can;t be opened and just exist so you can click on them to bring you to the actual folder. It seems that you can't create folders within favourites, which limits how helpful it can be in my opinion. Actually, I looked at Unity's project window more, and it does have a favourites section, it just only appears in the 2 column layout which I don't use which is why I didn't know it existed.
 
 It seems that deselecting things doesn't cause the inspector to stop displaying them. This could be a good thing, but it seems there isn't any way to make the inspector stop displaying them, which I don't love.
 
