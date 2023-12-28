@@ -50,3 +50,7 @@ Input is done using the `Input` singleton much like Unity's old input system. Ho
 Godot's equivalent to Unity's events are signals. They are fairly similar, but signals have a lot less boilerplate and some nice additional features like a button in the IDE that brings up a menu of all the signals that connect to the given function.
 
 Timers are something that have been a bit awkward in Unity. Not that the code itself is awkward, but it felt like there should be a better way than to constantly make variables just to decrease them by delta time and whatever else you need. Godot answers this with its Timer node, a dedicated node for timers. I'm not sure how helpful it will be, but it seems like it could make this kind of thing simpler.
+
+In Godot, collision is controlled by layers and masks. Layers are assigned to collision nodes and say what this node is (a node can have multiple layers). Masks say what this node can collide with. If a node has no masks, then it won't collide with anything regardless of what layer it is. This is noticable difference from Unity which only has layers and uses a collision matrix to say which layers collide with which and doesn't allow for object-by-object decisions like Godot does.
+
+In Unity, moving upwards on the y axis is always positive. In Godot that's not the case. It's still that way for 3d scenes, but in 2d scenes moving upwards visually requires moving negatively on the y axis.
