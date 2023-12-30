@@ -14,6 +14,7 @@ config/name="Getting Started"
 run/main_scene="res://First 3D Game/Main.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+config/windows_native_icon="res://Icons/3D Game icon.ico"
 
 [autoload]
 
@@ -65,3 +66,7 @@ jump={
 3d_physics/layer_1="player"
 3d_physics/layer_2="enemies"
 3d_physics/layer_3="world"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
