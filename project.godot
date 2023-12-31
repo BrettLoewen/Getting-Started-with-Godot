@@ -11,14 +11,14 @@ config_version=5
 [application]
 
 config/name="Getting Started"
-run/main_scene="res://First 2D Game/Main.tscn"
+run/main_scene="res://First 3D Game/Main.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 config/windows_native_icon="res://Icons/2D Game icon.ico"
 
 [autoload]
 
-MusicPlayer="res://First 3D Game/MusicPlayer.tscn"
+MusicPlayer="*res://First 3D Game/MusicPlayer.tscn"
 
 [display]
 
